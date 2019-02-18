@@ -1,3 +1,38 @@
+// Variables. Mobile first
+
 :root {
+    // Neutral colors
+    --color-black: hsl(215, 0%, 4%);
+    --color-white: hsl(215, 0%, 100%);
+    // Grayscale colors
+    --color-gray-90: hsl(215, 0%, 90%);
+    // Accidental color
+    --color-red: hsl(0, 84%, 44%);
+
+    // Basic font-size
     font-size: 100%;
+
+    // Fonts
+    --font-sans: Inter, -apple-system, system-ui, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+
+    // Header sizes
+    --header-lg: 60px;
+
+    // Text sizes
+    --text-normal: 1em;
+
+    // Spaces
+    -space-md: 1em;
 }
+
+// Phablet
+
+// @media screen and (max-width: 960px) {
+//     :root {
+//         --header-lg: 26px;
+//     }
+// }
+
+// Tablet
+// Laptop
+// Desktop
