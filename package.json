@@ -1,0 +1,23 @@
+{
+    "private": true,
+    "name": "personal-blog-vuepress",
+    "version": "0.1.0",
+    "description": "Personal blog by Aleks Petrov build with vuepress",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vuepress dev src",
+        "build": "vuepress build src",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Aleks Petrov <hello@alekspetrov.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0",
+        "node-sass": "^4.11.0",
+        "sass-loader": "^7.1.0"
+    },
+    "dependencies": {
+        "dayjs": "^1.7.8",
+        "vuepress": "^1.0.0-alpha.39"
+    }
+}
