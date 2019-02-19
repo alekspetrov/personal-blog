@@ -86,6 +86,11 @@ export default {
       background: var(--color-red-97);
       color: var(--color-red);
     }
+
+    a {
+      color: var(--color-red);
+      text-decoration: none;
+    }
   }
 }
 </style>

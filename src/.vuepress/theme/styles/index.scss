@@ -4,3 +4,8 @@
 @import './fonts';
 @import './code';
 @import './global';
+
+// HACK: Remove svg from rendering during 1.0.0 release
+.icon.outbound {
+    display: none;
+}
