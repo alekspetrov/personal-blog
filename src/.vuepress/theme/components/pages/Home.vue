@@ -97,11 +97,6 @@ export default {
 
   a {
     display: inline-block;
-    transition: 0.24s color ease-out;
-
-    &:hover {
-      color: var(--color-red);
-    }
   }
 }
 </style>

@@ -5,6 +5,7 @@
     --color-black: hsl(215, 0%, 5%);
     --color-white: hsl(215, 0%, 100%);
     // Grayscale colors
+    --color-gray-95: hsl(215, 0%, 95%);
     --color-gray-90: hsl(215, 0%, 90%);
     --color-gray-80: hsl(215, 0%, 80%);
     --color-gray-70: hsl(215, 0%, 70%);
@@ -15,7 +16,8 @@
     --color-gray-20: hsl(215, 0%, 20%);
     --color-gray-10: hsl(215, 0%, 10%);
     // Accidental color
-    --color-red: hsl(0, 84%, 44%);
+    --color-red: hsl(0, 100%, 38%);
+    --color-blue: hsl(215, 73%, 55%);
 
     // Fonts
     --font-sans: Inter, -apple-system, system-ui, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;

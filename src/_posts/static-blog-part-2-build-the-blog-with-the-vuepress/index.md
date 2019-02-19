@@ -28,6 +28,8 @@ export default {
 };
 ```
 
+## Lets check the code
+
 In The Design of Everyday Things, Don Norman wrote that irrespective of how designers envision their products (ie. the designers’ conceptual models), end users will always project their own mental models rooted from individual biases and worldviews onto their experiences of products.
 
 ```js
@@ -47,3 +49,7 @@ export default {
   }
 };
 ```
+
+In The Design of `Everyday Things`, Don Norman wrote that irrespective of how designers envision their products (ie. the designers’ conceptual models), end users will always project their own mental models rooted from individual biases and worldviews onto their experiences of products.
+
+> “In The Design of Everyday Things, Don Norman wrote that irrespective of how designers envision their products“
