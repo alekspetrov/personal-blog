@@ -45,11 +45,13 @@ export default {
   margin-bottom: var(--space-3xl);
 
   &__header {
-    padding-top: var(--space-2xl);
-    margin-bottom: var(--space-2xl);
+    padding-top: var(--space-lg);
+    margin-bottom: var(--space-xl);
 
     h1 {
-      margin-bottom: 12px;
+      margin-bottom: var(--space-sm);
+      font-size: var(--title-lg);
+      line-height: var(--leading-md);
     }
   }
 
@@ -59,22 +61,26 @@ export default {
 }
 
 .follow-link {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
   background-color: var(--color-gray-10);
   color: var(--color-white);
-  padding: var(--space-xl);
   text-align: center;
 }
 
 //TODO: Rework this when implement other templates
+
 .article-template {
-  // h2 {
-  //   margin-top: 48px;
-  //   margin-bottom: 24px;
-  // }
+  h2 {
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-size: var(--title-sm);
+  }
 
   p {
-    // font-size: 18px;
-    // line-height: 28px;
+    font-size: var(--text-md);
+    margin-bottom: var(--space-lg);
 
     code {
       background: var(--color-red-97);

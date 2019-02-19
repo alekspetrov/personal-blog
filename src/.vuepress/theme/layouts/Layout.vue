@@ -53,15 +53,8 @@ export default {
   border-top: 1px solid var(--color-gray-80);
   font-size: 14px;
 
-  span {
-    display: inline-block;
-    color: var(--color-gray-60);
-  }
-
   a {
-    text-decoration: none;
     margin-left: var(--space-md);
-    vertical-align: baseline;
   }
 }
 </style>
