@@ -1,9 +1,10 @@
-// Variables. Mobile first
+// Variables. Mobile first approach
 
 :root {
     // Neutral colors
     --color-black: hsl(215, 0%, 5%);
     --color-white: hsl(215, 0%, 100%);
+
     // Grayscale colors
     --color-gray-95: hsl(215, 0%, 95%);
     --color-gray-90: hsl(215, 0%, 90%);
@@ -15,49 +16,46 @@
     --color-gray-30: hsl(215, 0%, 30%);
     --color-gray-20: hsl(215, 0%, 20%);
     --color-gray-10: hsl(215, 0%, 10%);
-    // Accidental color
+
+    // Accident color
     --color-red: hsl(0, 100%, 38%);
-    --color-blue: hsl(215, 73%, 55%);
+    --color-red-97: hsl(0, 100%, 97%);
 
     // Fonts
     --font-sans: Inter, -apple-system, system-ui, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;
 
-    // Basic font-size
-    font-size: 100%;
-
     // Header sizes
-    --header-lg: 44px;
+    --title-sm: 1.5em;
+    --title-md: 1.875em;
+    --title-lg: 2.5em;
+    --title-xl: 2.75em;
 
     // Text sizes
     --text-sm: 0.875em;
     --text-md: 1em;
     --text-lg: 1.15em;
     --text-xl: 1.25em;
+    --text-2xl: 1.25em;
+
+    // Line heights
+    --leading-sm: 1.1em;
+    --leading-md: 1.25em;
+    --leading-lg: 1.5em;
 
     // Spaces
     --space-xs: 0.5rem;
-    --space-sm: 0.5rem;
+    --space-sm: 0.75rem;
     --space-md: 1rem;
     --space-lg: 1.5rem;
-    --space-xl: 2rem;
-    --space-2xl: 2.5rem;
-    --space-3xl: 3rem;
+    --space-xl: 3rem;
 
     // Letter spacing
     --tracking-sm: -0.038em;
     --tracking-md: -0.006em;
-
-    // Line heights
-    --leading-sm: 1.15em;
-    --leading-md: 1.4em;
 }
 
-// Phablet
-
-// @media screen and (max-width: 760px) {
-//     :root {}
-// }
-
-// Tablet
-// Laptop
-// Desktop
+@media screen and (min-width: 48em) {
+    :root {
+        --title-xl: 3.5em;
+    }
+}

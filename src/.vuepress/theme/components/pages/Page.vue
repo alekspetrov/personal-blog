@@ -66,33 +66,18 @@ export default {
 }
 
 //TODO: Rework this when implement other templates
-.content {
-  h2 {
-    margin-top: 48px;
-    margin-bottom: 24px;
-  }
-
-  hr {
-    border: 0;
-    height: 1px;
-    background: var(--color-gray-80);
-  }
-
-  blockquote {
-    font-style: italic;
-    border-left: 4px solid var(--color-black);
-    padding-left: 16px;
-    margin-left: 0;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    color: var(--color-gray-40);
-  }
+.article-template {
+  // h2 {
+  //   margin-top: 48px;
+  //   margin-bottom: 24px;
+  // }
 
   p {
-    font-size: 18px;
-    line-height: 28px;
+    // font-size: 18px;
+    // line-height: 28px;
 
     code {
+      background: var(--color-red-97);
       color: var(--color-red);
     }
   }

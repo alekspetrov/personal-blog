@@ -43,62 +43,38 @@ export default {
 @import "../../styles/breakpoints";
 
 .banner {
-  padding-top: var(--space-2xl);
-  padding-bottom: var(--space-2xl);
+  margin-bottom: var(--space-xl);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
   border-bottom: 2px solid var(--color-black);
-  margin-bottom: 2em;
 
   h1 {
-    font-size: 44px;
-    line-height: 44px;
-
-    // font-size: 56px;
-    // line-height: 56px;
-
-    // font-size: 5em;
-    // line-height: 0.875em;
-
     margin: 0;
-    margin-bottom: 24px;
-
-    @include breakpoint(tablet) {
-      font-size: 56px;
-      line-height: 56px;
-    }
-  }
-
-  p {
-    font-size: 20px;
-    line-height: 28px;
+    margin-bottom: var(--space-md);
+    line-height: var(--leading-sm);
   }
 }
 
 .post {
-  margin-bottom: 24px;
-  padding-bottom: 24px;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-lg);
 
   &:not(:last-child) {
     border-bottom: 1px solid var(--color-gray-80);
   }
 
   &__info {
-    margin-bottom: 20px;
+    margin-bottom: var(--space-lg);
   }
 
   time {
     display: inline-block;
-    font-size: 16px;
+    font-size: var(--text-md);
   }
 
   p {
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  a {
-    display: inline-block;
+    font-size: var(--text-md);
+    line-height: var(--leading-lg);
   }
 }
 </style>
-
-

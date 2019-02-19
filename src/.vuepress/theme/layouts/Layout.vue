@@ -40,12 +40,11 @@ export default {
 }
 
 .logo {
-  display: inline-block;
+  line-height: var(--leading-lg);
   font-weight: 800;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: var(--text-lg);
   letter-spacing: -0.016em;
-  vertical-align: baseline;
 }
 
 .site-footer {
@@ -60,9 +59,8 @@ export default {
   }
 
   a {
-    display: inline-block;
     text-decoration: none;
-    margin-left: 16px;
+    margin-left: var(--space-md);
     vertical-align: baseline;
   }
 }
