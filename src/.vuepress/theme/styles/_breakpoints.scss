@@ -1,1 +1,44 @@
+/* 
+Breakpoints mixin
 
+Usage: 
+.element {
+    @include breakpoint(mobile) {
+        ...
+    }
+}
+*/
+
+// Display sizes
+
+$desktop: 70em;
+$laptop: 64em;
+$tablet: 50em;
+$phablet: 37.5em;
+$mobile: 376px;
+
+@mixin breakpoint($point) {
+    @if $point==desktop {
+        @media (min-width: $desktop) {
+            @content;
+        }
+    }
+
+    @else if $point==laptop {
+        @media (min-width: $laptop) {
+            @content;
+        }
+    }
+
+    @else if $point==tablet {
+        @media (min-width: $tablet) {
+            @content;
+        }
+    }
+
+    @else if $point==phablet {
+        @media (min-width: $phablet) {
+            @content;
+        }
+    }
+}

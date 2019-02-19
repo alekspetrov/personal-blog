@@ -2,35 +2,58 @@
 
 :root {
     // Neutral colors
-    --color-black: hsl(215, 0%, 4%);
+    --color-black: hsl(215, 0%, 5%);
     --color-white: hsl(215, 0%, 100%);
     // Grayscale colors
     --color-gray-90: hsl(215, 0%, 90%);
+    --color-gray-80: hsl(215, 0%, 80%);
+    --color-gray-70: hsl(215, 0%, 70%);
+    --color-gray-60: hsl(215, 0%, 60%);
+    --color-gray-50: hsl(215, 0%, 50%);
+    --color-gray-40: hsl(215, 0%, 40%);
+    --color-gray-30: hsl(215, 0%, 30%);
+    --color-gray-20: hsl(215, 0%, 20%);
+    --color-gray-10: hsl(215, 0%, 10%);
     // Accidental color
     --color-red: hsl(0, 84%, 44%);
-
-    // Basic font-size
-    font-size: 100%;
 
     // Fonts
     --font-sans: Inter, -apple-system, system-ui, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;
 
+    // Basic font-size
+    font-size: 100%;
+
     // Header sizes
-    --header-lg: 60px;
+    --header-lg: 44px;
 
     // Text sizes
-    --text-normal: 1em;
+    --text-sm: 0.875em;
+    --text-md: 1em;
+    --text-lg: 1.15em;
+    --text-xl: 1.25em;
 
     // Spaces
-    -space-md: 1em;
+    --space-xs: 0.5rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 2.5rem;
+    --space-3xl: 3rem;
+
+    // Letter spacing
+    --tracking-sm: -0.038em;
+    --tracking-md: -0.006em;
+
+    // Line heights
+    --leading-sm: 1.15em;
+    --leading-md: 1.4em;
 }
 
 // Phablet
 
-// @media screen and (max-width: 960px) {
-//     :root {
-//         --header-lg: 26px;
-//     }
+// @media screen and (max-width: 760px) {
+//     :root {}
 // }
 
 // Tablet

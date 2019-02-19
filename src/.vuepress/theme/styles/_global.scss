@@ -1,7 +1,56 @@
 body {
+    font-size: 100%;
     font-family: var(--font-sans);
+    line-height: var(--leading-md);
+    background: var(--color-white);
+    color: var(--color-black);
+    letter-spacing: var(--tracking-md);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.1em;
+    letter-spacing: var(--tracking-sm);
+    line-height: 1.1em;
 }
 
 h1 {
-    font-size: var(--header-lg)
+    font-size: 40px;
+    line-height: 44px;
+}
+
+h3 {
+    letter-spacing: var(--tracking-md);
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-bottom: 8px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+.wrapper {
+    padding: 0 20px;
+}
+
+.post-data {
+    color: var(--color-gray-30);
+
+    * {
+        display: inline-block;
+    }
 }
