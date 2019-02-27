@@ -1,8 +1,6 @@
 body {
     font-size: 16px;
     font-family: var(--font-sans);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     line-height: var(--leading-md);
     background: var(--color-white);
     color: var(--color-black);
@@ -15,28 +13,33 @@ h3,
 h4 {
     margin: 0;
     font-weight: 700;
-    line-height: 1.25em;
-    letter-spacing: var(--tracking-sm);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
+    letter-spacing: var(--tracking-xs);
     font-weight: 800;
-    font-size: var(--title-xl);
+    font-size: var(--title-h1);
+    line-height: calc(var(--title-h1) / 2.5);
 }
 
 h2 {
-    font-size: var(--title-lg);
+    letter-spacing: var(--tracking-sm);
+    font-size: var(--title-h2);
+    line-height: calc(var(--title-h2) / 2);
 }
 
 h3 {
+    letter-spacing: var(--tracking-sm);
+    font-size: var(--title-h4);
+    line-height: calc(var(--title-h3) / 1.5);
     margin-bottom: var(--space-xs);
-    letter-spacing: var(--tracking-md);
-    font-size: var(--title-sm);
 }
 
 p {
     margin: 0;
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
     line-height: var(--leading-lg);
 }
 
@@ -44,6 +47,7 @@ a {
     display: inline-block;
     color: inherit;
     transition: 0.24s color ease-out;
+    text-decoration: none;
 
     &:hover {
         color: var(--color-red);
@@ -76,7 +80,7 @@ blockquote {
 }
 
 .post-data {
-    color: var(--color-gray-30);
+    color: var(--color-gray-60);
 
     * {
         display: inline-block;

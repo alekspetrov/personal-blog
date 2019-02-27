@@ -4,7 +4,7 @@
       <div class="page">
         <div class="page__header">
           <h1>{{ $page.frontmatter.title }}</h1>
-          <div class="page__info post-data">
+          <div class="post-data">
             <time :datetime="$page.frontmatter.date">{{ date($page.frontmatter.date) }}</time>
             <span>&nbsp;•&nbsp;</span>
             <span>{{ $page.frontmatter.category }}</span>
@@ -49,14 +49,9 @@ export default {
     margin-bottom: var(--space-xl);
 
     h1 {
-      margin-bottom: var(--space-sm);
-      font-size: var(--title-lg);
-      line-height: var(--leading-md);
+      margin-bottom: var(--space-md);
+      font-size: var(--title-h1);
     }
-  }
-
-  &__info {
-    font-size: 18px;
   }
 }
 
@@ -75,14 +70,18 @@ export default {
   h2 {
     margin-top: 48px;
     margin-bottom: 24px;
-    font-size: var(--title-sm);
+    font-size: var(--title-h3);
   }
 
   p {
     font-size: var(--text-md);
+    line-height: var(--leading-lg);
     margin-bottom: var(--space-lg);
 
     code {
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      line-height: inherit;
       background: var(--color-red-97);
       color: var(--color-red);
     }

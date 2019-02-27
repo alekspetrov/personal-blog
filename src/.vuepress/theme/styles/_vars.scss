@@ -22,19 +22,21 @@
     --color-red-97: hsl(0, 100%, 97%);
 
     // Fonts
-    --font-sans: Inter, -apple-system, system-ui, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+    --font-sans: Inter, -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
     // Header sizes
-    --title-sm: 1.5em;
-    --title-md: 1.875em;
-    --title-lg: 2.5em;
-    --title-xl: 2.75em;
+    --title-h1: 2.75em;
+    --title-h2: 2.5em;
+    --title-h3: 1.875em;
+    --title-h4: 1.5em;
 
     // Text sizes
-    --text-sm: 0.875em;
-    --text-md: 1em;
-    --text-lg: 1.15em;
-    --text-xl: 1.25em;
+    --text-xs: 0.875em; //14px
+    --text-sm: 1em; // 16px
+    --text-md: 1.125em; //18px
+    --text-lg: 1.25em; //20px
 
     // Line heights
     --leading-sm: 1.1em;
@@ -42,14 +44,15 @@
     --leading-lg: 1.5em;
 
     // Spaces
-    --space-xs: 0.5rem;
-    --space-sm: 0.75rem;
-    --space-md: 1rem;
-    --space-lg: 1.5rem;
-    --space-xl: 3rem;
+    --space-xs: 0.5rem; // 8px
+    --space-sm: 0.75rem; //12px
+    --space-md: 1rem; // 16px
+    --space-lg: 1.5rem; //32px
+    --space-xl: 3rem; //48px
 
     // Letter spacing
-    --tracking-sm: -0.038em;
+    --tracking-xs: -0.038em;
+    --tracking-sm: -0.02em;
     --tracking-md: -0.006em;
 }
 

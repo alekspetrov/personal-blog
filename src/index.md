@@ -2,6 +2,6 @@
 
 # Product Design & Development
 
-Hello, I'm product designer & developer from Russia, living in&nbsp;Montenegro. This blog based on&nbsp;personal experience.
+I identify problems and look for effective solutions with code and words. Trying to find my place in the industry as designer-programmer-marketer.
 
 :::

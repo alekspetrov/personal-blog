@@ -35,16 +35,25 @@ export default {
 @import "../styles/index";
 
 .site-header {
-  border-bottom: 1px solid var(--color-gray-80);
   padding: var(--space-md) 0;
 }
 
 .logo {
   line-height: var(--leading-lg);
-  font-weight: 800;
+  font-weight: 700;
+  font-size: var(--text-md);
   text-decoration: none;
-  font-size: var(--text-lg);
   letter-spacing: -0.016em;
+
+  color: var(--color-white);
+  background-color: var(--color-black);
+  text-align: center;
+  padding: 0 8px;
+
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-red);
+  }
 }
 
 .site-footer {

@@ -7,12 +7,12 @@
           <h3>
             <router-link :to="post.path">{{ post.title }}</router-link>
           </h3>
+          <p>{{ post.frontmatter.description }}</p>
           <div class="post__info post-data">
             <time :datetime="post.frontmatter.date">{{ date(post.frontmatter.date) }}</time>
             <span>&nbsp;•&nbsp;</span>
             <span>{{ post.frontmatter.category }}</span>
           </div>
-          <p>{{ post.frontmatter.description }}</p>
         </article>
       </section>
     </div>
@@ -51,7 +51,11 @@ export default {
   h1 {
     margin: 0;
     margin-bottom: var(--space-md);
-    line-height: var(--leading-sm);
+    font-weight: 900;
+  }
+
+  p {
+    font-size: var(--text-lg);
   }
 }
 
@@ -65,16 +69,13 @@ export default {
 
   &__info {
     margin-bottom: var(--space-lg);
-  }
-
-  time {
-    display: inline-block;
-    font-size: var(--text-md);
+    font-size: var(--text-xs);
   }
 
   p {
-    font-size: var(--text-md);
+    font-size: var(--text-sm);
     line-height: var(--leading-lg);
+    margin-bottom: var(--space-md);
   }
 }
 </style>
