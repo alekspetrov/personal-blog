@@ -38,3 +38,11 @@
     src: url("../fonts/Inter-Black.woff2") format("woff2"),
         url("../fonts/Inter-Black.woff") format("woff");
 }
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/WorkSans-Black.woff2") format("woff2"),
+        url("../fonts/WorkSans-Black.woff") format("woff"),
+}

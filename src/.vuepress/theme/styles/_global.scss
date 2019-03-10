@@ -2,8 +2,8 @@ body {
     font-size: 16px;
     font-family: var(--font-sans);
     line-height: var(--leading-md);
-    background: var(--color-white);
-    color: var(--color-black);
+    background: var(--color-primary);
+    color: var(--color-secondary);
     letter-spacing: var(--tracking-md);
 }
 
@@ -12,25 +12,29 @@ h2,
 h3,
 h4 {
     margin: 0;
-    font-weight: 700;
+    font-weight: 800;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-    letter-spacing: var(--tracking-xs);
+h1,
+.title-h1 {
+    letter-spacing: -0.01em;
+    font-family: var(--font-accident);
     font-weight: 800;
     font-size: var(--title-h1);
-    line-height: calc(var(--title-h1) / 2.5);
+    line-height: 1;
 }
 
-h2 {
+h2,
+.title-h2 {
     letter-spacing: var(--tracking-sm);
     font-size: var(--title-h2);
     line-height: calc(var(--title-h2) / 2);
 }
 
-h3 {
+h3,
+.title-h3 {
     letter-spacing: var(--tracking-sm);
     font-size: var(--title-h4);
     line-height: calc(var(--title-h3) / 1.5);
@@ -66,13 +70,25 @@ blockquote {
     margin-bottom: var(--space-lg);
     padding-left: var(--space-md);
     font-style: italic;
-    border-left: 4px solid var(--color-black);
-    color: var(--color-gray-40);
+    border-left: 4px solid var(--color-secondary);
+    color: var(--color-gray-50);
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 40em;
+    overflow: hidden;
+    margin: 0;
+
+    @include breakpoint(phablet) {
+        margin: 0 12% 0 4%;
+    }
+
+    @include breakpoint(tablet) {
+        margin: 0 24% 0 8%;
+    }
+
+    @include breakpoint(laptop) {
+        margin: 0 32% 0 12%;
+    }
 }
 
 .wrapper {
@@ -80,7 +96,7 @@ blockquote {
 }
 
 .post-data {
-    color: var(--color-gray-60);
+    color: var(--color-gray-50);
 
     * {
         display: inline-block;

@@ -4,6 +4,7 @@
       <div class="page">
         <div class="page__header">
           <h1>{{ $page.frontmatter.title }}</h1>
+          <p>{{ $page.frontmatter.lead }}</p>
           <div class="post-data">
             <time :datetime="$page.frontmatter.date">{{ date($page.frontmatter.date) }}</time>
             <span>&nbsp;•&nbsp;</span>
@@ -12,12 +13,6 @@
         </div>
         <div v-if="$page.frontmatter.template==='article'" class="article-template">
           <Content/>
-        </div>
-        <div class="follow-link">
-          <p>
-            Don't miss the next post, follow my
-            <a href="https://twitter.com/alekspetrovlive">Twitter</a>
-          </p>
         </div>
       </div>
     </div>
@@ -45,12 +40,21 @@ export default {
   margin-bottom: var(--space-3xl);
 
   &__header {
-    padding-top: var(--space-lg);
     margin-bottom: var(--space-xl);
 
+    @include breakpoint(mobile) {
+      margin-bottom: calc(var(--space-xl) * 1.5);
+    }
+
     h1 {
-      margin-bottom: var(--space-md);
-      font-size: var(--title-h1);
+      margin-bottom: var(--space-lg);
+      font-size: var(--title-h2);
+    }
+
+    p {
+      font-size: var(--text-md);
+      margin-bottom: var(--space-lg);
+      color: var(--color-gray-80);
     }
   }
 }
@@ -74,6 +78,7 @@ export default {
   }
 
   p {
+    color: var(--color-gray-80);
     font-size: var(--text-md);
     line-height: var(--leading-lg);
     margin-bottom: var(--space-lg);

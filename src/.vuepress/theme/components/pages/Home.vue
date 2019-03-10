@@ -7,7 +7,7 @@
           <h3>
             <router-link :to="post.path">{{ post.title }}</router-link>
           </h3>
-          <p>{{ post.frontmatter.description }}</p>
+          <!-- <p>{{ post.frontmatter.description }}</p> -->
           <div class="post__info post-data">
             <time :datetime="post.frontmatter.date">{{ date(post.frontmatter.date) }}</time>
             <span>&nbsp;•&nbsp;</span>
@@ -44,9 +44,7 @@ export default {
 
 .banner {
   margin-bottom: var(--space-xl);
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-xl);
-  border-bottom: 2px solid var(--color-black);
+  padding-bottom: var(--space-md);
 
   h1 {
     margin: 0;
@@ -56,26 +54,17 @@ export default {
 
   p {
     font-size: var(--text-lg);
+    color: var(--color-gray-50);
+  }
+
+  @include breakpoint(mobile) {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    margin-bottom: calc(var(--space-md) * 3);
   }
 }
 
 .post {
-  margin-bottom: var(--space-lg);
-  padding-bottom: var(--space-lg);
-
-  &:not(:last-child) {
-    border-bottom: 1px solid var(--color-gray-80);
-  }
-
-  &__info {
-    margin-bottom: var(--space-lg);
-    font-size: var(--text-xs);
-  }
-
-  p {
-    font-size: var(--text-sm);
-    line-height: var(--leading-lg);
-    margin-bottom: var(--space-md);
-  }
+  margin-bottom: calc(var(--space-sm) * 3);
 }
 </style>

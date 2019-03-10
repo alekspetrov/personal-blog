@@ -2,35 +2,35 @@
 
 :root {
     // Neutral colors
-    --color-black: hsl(215, 0%, 5%);
-    --color-white: hsl(215, 0%, 100%);
+    --color-black: hsl(0, 10%, 10%);
+    --color-white: hsl(0, 5%, 96%);
 
     // Grayscale colors
-    --color-gray-95: hsl(215, 0%, 95%);
-    --color-gray-90: hsl(215, 0%, 90%);
-    --color-gray-80: hsl(215, 0%, 80%);
-    --color-gray-70: hsl(215, 0%, 70%);
-    --color-gray-60: hsl(215, 0%, 60%);
-    --color-gray-50: hsl(215, 0%, 50%);
-    --color-gray-40: hsl(215, 0%, 40%);
-    --color-gray-30: hsl(215, 0%, 30%);
-    --color-gray-20: hsl(215, 0%, 20%);
-    --color-gray-10: hsl(215, 0%, 10%);
+    --color-gray-80: hsla(0, 10%, 96%, 0.8);
+    --color-gray-50: hsla(0, 10%, 96%, 0.5);
+    --color-gray-40: hsla(0, 10%, 96%, 0.4);
 
-    // Accident color
-    --color-red: hsl(0, 100%, 38%);
-    --color-red-97: hsl(0, 100%, 97%);
+    --color-primary: var(--color-black);
+    --color-secondary: var(--color-white);
+
+    // [theme="light"]  
+    // --color-primary: var(--color-white);
+    // --color-secondary: var(--color-black);
+    // --color-gray-80: hsla(0, 10%, 10%, 0.8);
+    // --color-gray-50: hsla(0, 10%, 10%, 0.5);
+    // --color-gray-40: hsla(0, 10%, 10%, 0.4);
 
     // Fonts
     --font-sans: Inter, -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
         Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+    --font-accident: 'Work Sans', 'PT Sans', 'Open Sans', sans-serif;
     --font-mono: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
-    // Header sizes
+    // Header sizes mobile
     --title-h1: 2.75em;
-    --title-h2: 2.5em;
-    --title-h3: 1.875em;
-    --title-h4: 1.5em;
+    --title-h2: 2.5em; //46
+    --title-h3: 2em; // 32px 
+    --title-h4: 1.75em; //18
 
     // Text sizes
     --text-xs: 0.875em; //14px
@@ -58,6 +58,11 @@
 
 @media screen and (min-width: 48em) {
     :root {
-        --title-xl: 3.5em;
+        --title-h1: 5.25em;
+        --title-h2: 4em; //64
+        --title-h3: 3em; // 48
+        --title-h4: 1.5em; // 24
+
+        --text-lg: 1.5em; //24px
     }
 }

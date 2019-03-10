@@ -10,8 +10,8 @@ black: #333,
 purple: #a71d5d,
 maroon: #a71d5d,
 green: #63a35c,
-light-gray: #f7f7f7,
-dark-gray: #969896);
+light-gray: var(--color-secondary),
+dark-gray:var(--color-primary));
 
 
 // base
@@ -35,7 +35,6 @@ pre[class*='language-'] {
     overflow: auto;
     margin: 1em 0;
     padding: 1.2em;
-    border-radius: 3px;
     font-size: 85%;
 }
 

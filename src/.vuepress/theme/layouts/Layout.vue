@@ -3,19 +3,23 @@
     <!-- Header -->
     <header class="site-header">
       <div class="wrapper">
-        <router-link to="/" class="logo">Aleks Petrov</router-link>
+        <router-link to="/" class="logo">
+          <span class="logo__sign">A</span>
+          <span class="logo__text">Aleks Petrov</span>
+        </router-link>
       </div>
     </header>
     <!-- Content -->
     <article>
       <Home v-if="$page.path === '/'"/>
-      <Page v-else/>
+      <Article v-else/>
     </article>
     <!-- Footer -->
     <footer class="site-footer">
       <div class="wrapper">
-        <span>© Aleks Pertov, 2019</span>
         <a class="link" href="https://twitter.com/alekspetrovlive">Twitter</a>
+        <a class="link" href="https://github.com/alekspetrov">Github</a>
+        <a class="link" href="https://linkedin.com/in/alekspetrov/">LinkedIn</a>
       </div>
     </footer>
   </div>
@@ -23,10 +27,10 @@
 
 <script>
 import Home from "../components/pages/Home";
-import Page from "../components/pages/Page";
+import Article from "../components/pages/Article";
 
 export default {
-  components: { Home, Page }
+  components: { Home, Article }
 };
 </script>
 
@@ -36,34 +40,36 @@ export default {
 
 .site-header {
   padding: var(--space-md) 0;
+  margin-bottom: var(--space-md);
 }
 
 .logo {
-  line-height: var(--leading-lg);
-  font-weight: 700;
-  font-size: var(--text-md);
-  text-decoration: none;
-  letter-spacing: -0.016em;
+  &__sign {
+    display: inline-block;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 800;
+    font-size: 18px;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    margin-right: var(--space-xs);
+  }
 
-  color: var(--color-white);
-  background-color: var(--color-black);
-  text-align: center;
-  padding: 0 8px;
-
-  &:hover {
-    color: var(--color-white);
-    background-color: var(--color-red);
+  &__text {
+    font-family: var(--font-accident);
+    font-weight: 700;
+    font-size: 20px;
   }
 }
 
 .site-footer {
-  padding-top: var(--space-md);
+  padding-top: calc(var(--space-lg) * 3);
   padding-bottom: var(--space-xl);
-  border-top: 1px solid var(--color-gray-80);
-  font-size: 14px;
 
   a {
-    margin-left: var(--space-md);
+    margin-right: var(--space-md);
   }
 }
 </style>
