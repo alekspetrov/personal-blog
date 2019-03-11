@@ -89,6 +89,7 @@ export default {
       font-size: 0.875rem;
       line-height: inherit;
       background: var(--color-secondary);
+      color: var(--color-primary);
     }
 
     a {
@@ -96,12 +97,12 @@ export default {
 
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         height: 2px;
         width: 100%;
         bottom: 3px;
         left: 0;
-        background: var(--color-secondary);
+        background-color: var(--color-secondary);
         opacity: 0.4;
         transition: opacity 0.24s ease-out;
       }

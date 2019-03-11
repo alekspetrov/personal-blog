@@ -5,21 +5,6 @@
     --color-black: hsl(0, 10%, 10%);
     --color-white: hsl(0, 5%, 96%);
 
-    // Grayscale colors
-    --color-gray-80: hsla(0, 10%, 96%, 0.8);
-    --color-gray-50: hsla(0, 10%, 96%, 0.5);
-    --color-gray-40: hsla(0, 10%, 96%, 0.4);
-
-    --color-primary: var(--color-black);
-    --color-secondary: var(--color-white);
-
-    // [theme="light"]  
-    // --color-primary: var(--color-white);
-    // --color-secondary: var(--color-black);
-    // --color-gray-80: hsla(0, 10%, 10%, 0.8);
-    // --color-gray-50: hsla(0, 10%, 10%, 0.5);
-    // --color-gray-40: hsla(0, 10%, 10%, 0.4);
-
     // Fonts
     --font-sans: Inter, -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
         Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;

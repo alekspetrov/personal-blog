@@ -5,6 +5,20 @@ body {
     background: var(--color-primary);
     color: var(--color-secondary);
     letter-spacing: var(--tracking-md);
+
+    --color-gray-80: hsla(0, 10%, 10%, 0.8);
+    --color-gray-50: hsla(0, 10%, 10%, 0.5);
+    --color-gray-40: hsla(0, 10%, 10%, 0.4);
+    --color-primary: var(--color-white);
+    --color-secondary: var(--color-black);
+
+    &[data-theme="dark"] {
+        --color-gray-80: hsla(0, 10%, 96%, 0.8);
+        --color-gray-50: hsla(0, 10%, 96%, 0.5);
+        --color-gray-40: hsla(0, 10%, 96%, 0.4);
+        --color-primary: var(--color-black);
+        --color-secondary: var(--color-white);
+    }
 }
 
 h1,
@@ -114,4 +128,10 @@ ol {
     * {
         display: inline-block;
     }
+}
+
+button {
+    background: none;
+    border: 0;
+    outline: none;
 }
