@@ -52,7 +52,8 @@ export default {
     }
 
     p {
-      font-size: var(--text-md);
+      font-size: var(--text-lg);
+      line-height: var(--leading-lg);
       margin-bottom: var(--space-lg);
       color: var(--color-gray-80);
     }
@@ -71,30 +72,55 @@ export default {
 //TODO: Rework this when implement other templates
 
 .article-template {
-  h2 {
-    margin-top: 48px;
-    margin-bottom: 24px;
-    font-size: var(--title-h3);
+  color: var(--color-gray-80);
+
+  h3 {
+    margin-bottom: var(--space-lg);
+    font-size: var(--title-h4);
   }
 
   p {
-    color: var(--color-gray-80);
     font-size: var(--text-md);
-    line-height: var(--leading-lg);
+    line-height: 1.7;
     margin-bottom: var(--space-lg);
 
     code {
       font-family: var(--font-mono);
       font-size: 0.875rem;
       line-height: inherit;
-      background: var(--color-red-97);
-      color: var(--color-red);
+      background: var(--color-secondary);
     }
 
     a {
-      color: var(--color-red);
-      text-decoration: none;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 100%;
+        bottom: 3px;
+        left: 0;
+        background: var(--color-secondary);
+        opacity: 0.4;
+        transition: opacity 0.24s ease-out;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
     }
+  }
+
+  ul,
+  ol {
+    margin-bottom: var(--space-xl);
+  }
+
+  li {
+    margin-bottom: var(--space-md);
   }
 }
 </style>

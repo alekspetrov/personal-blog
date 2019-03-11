@@ -55,6 +55,7 @@ export default {
   p {
     font-size: var(--text-lg);
     color: var(--color-gray-50);
+    line-height: var(--leading-lg);
   }
 
   @include breakpoint(mobile) {
